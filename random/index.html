@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f4f6;
+}
+.btn {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+     left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(93, 89, 89);
+    opacity:0;
+    pointer-events: none
+}
+#overlay:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+</style>
+<body>
+    <a href="#overlay" class="btn">Click Me</a>
+    <div id="overlay">
+        <div>
+            <p style="font-family: monospace; background-color: yellow;">❌ Wrong Credentials. Please Provide Valid Information</p>
+            <a href="#" class="btn">Close</a>
+        </div>
+    </div>
+</body>
+</html>
