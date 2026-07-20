@@ -1,116 +1,316 @@
-Raghuveer Sain 13-07-2026 17:54 • 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="style.css">
-<style>
-#price{
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-#price1 {
-    height: 200px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-#price2 {
-    height: 200px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include this in your <head> to load the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 50px;
+        }
 
-#price3 {
-    height: 200px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-</style>
+        nav {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(30, 160, 160);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+        }
+
+
+        #logo {
+            /* border: 1px solid red; */
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu {
+            /* border: 1px solid blue; */
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        #menu>p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+
+        #banner {
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ff5a36;
+            color: #ffffff;
+            font-size: large;
+        }
+
+
+        #banner>div {
+            /* border:1px solid blue; */
+            width: 48%;
+            text-align: center;
+        }
+
+
+        #child1>h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+
+        #child1>h1>span {
+            color: yellowgreen;
+        }
+
+        #child2>img {
+            border-radius: 20px;
+        }
+
+        #grid {
+            /* border: 1px solid red; */
+            width: 100%;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+
+        #grid>div {
+            border-radius: 5px;
+            /* padding: 8px; */
+            /* background-color: #ff5a36; */
+        }
+
+        #grid>div>img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        #price {
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            font-size: larger;
+        }
+
+        #price1 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #price2 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #price3 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        @media (max-width: 300px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<nav>
-<div id="logo">
-<h2>Logo</h2>
-</div>
-<div id="menu">
-<p><a href="index.html">Home</a></p>
-<p><a href="about.html">About</a></p>
-<p><a href="services.html">Services</a></p>
-<p><a href="contact.html">Contact</a></p>
-</div>
-</nav>
+    <nav>
+        <div id="logo">
+            <h2 style="color: white;">Logo</h2>
+        </div>
+        <div id="menu">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+    </nav>
 
 
-<section id="banner">
-<div id="child1">
-<h1>Welcome to Our <span>Awesome</span> Website</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa unde tempora, aut facilis assumenda quas voluptates animi architecto illum non. Voluptate quos et obcaecati impedit molestiae rerum atque expedita.
-Ea quisquam quibusdam fuga odit commodi sapiente, eligendi sunt facilis ducimus libero, ut, obcaecati officia vel aperiam distinctio et aspernatur in nostrum exercitationem aliquid vitae voluptas voluptates expedita minus? Ratione?
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fuga nobis odio dolor ullam atque magni voluptates quia nihil molestiae fugit iusto animi aliquam cupiditate delectus ratione, reprehenderit, inventore reiciendis?</p>
-</div>
-<div id="child2">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScDAlSCcIOEKLEiWKyMuWJl9fGYHZU8nAQgnsyB73or0h1RAkkKbBZlYqy&s=10" alt="superBike">
-</div>
-</section>
-
-
-
-<section id="grid">
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-<div><img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY5ghSKityCk7RcR__p8hy4X_M6UxNDS5bNvglt-BfazhJ8nkm-HegOIA&s=10" alt="Ibm Logo"></div>
-</section>
+    <section id="banner">
+        <div id="child1">
+            <h1>Welcome to Our <span>Awesome</span> Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa unde tempora, aut facilis assumenda
+                quas voluptates animi architecto illum non. Voluptate quos et obcaecati impedit molestiae rerum atque
+                expedita.
+                Ea quisquam quibusdam fuga odit commodi sapiente, eligendi sunt facilis ducimus libero, ut, obcaecati
+                officia vel aperiam distinctio et aspernatur in nostrum exercitationem aliquid vitae voluptas voluptates
+                expedita minus? Ratione?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fuga nobis odio dolor ullam atque magni
+                voluptates quia nihil molestiae fugit iusto animi aliquam cupiditate delectus ratione, reprehenderit,
+                inventore reiciendis?</p>
+        </div>
+        <div id="child2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGzQhvMg5jolrMk5gXUdyrt5kfiudcYKhFfU9oNbjYg&s=10"
+                alt="food">
+        </div>
+    </section>
 
 
 
-<section id="price">
-<div id="price1">
-<h2 style="color: green;">Basic</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-<h3>$10</h3>
-<button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: rgb(100, 2, 100);">Buy Now</button>
-</div>
-<div id="price2">
-<h2 style="color: rgb(243, 2, 243);">Standard</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-<h3>$20</h3>
-<button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: rgb(100, 2, 100)">Buy Now</button>
-</div>
-<div id="price3">
-<h2 style="color: rgb(251, 213, 3);">Premium</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-<h3>$30</h3>
-<button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: rgb(100, 2, 100)">Buy Now</button>
-</div>
-</section>
-<!-- all three pages make itcomle website -->
+    <section id="grid">
+        <div><img height="200px" width="200px"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg"
+                alt="Ibm Logo"></div>
+        <div><img height="200px" width="200px"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg"
+                alt="Ibm Logo"></div>
+        <div><img height="200px" width="200px"
+                src="https://img.magnific.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="food"></div>
+        <div><img height="200px" width="200px"
+                src="https://img.magnific.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="food"></div>
+        <div><img height="200px" width="200px"
+                src="https://img.magnific.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="food"></div>
+        <div><img height="200px" width="200px"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg"
+                alt="food"></div>
+        <div><img height="200px" width="200px"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg"
+                alt="food"></div>
+        <div><img height="200px" width="200px"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg"
+                alt="food"></div>
+    </section>
+
+
+
+    <section id="price">
+        <div id="price1">
+            <h2 style="color: #2a9d8f;">Basic</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <h3>$10</h3>
+            <button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: #2a9d8f;">Buy
+                Now</button>
+        </div>
+        <div id="price2">
+            <h2 style="color: #e76f51;">Standard</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <h3>$20</h3>
+            <button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: #e76f51">Buy
+                Now</button>
+        </div>
+        <div id="price3">
+            <h2 style="color: #f4a261;">Premium</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <h3>$30</h3>
+            <button style="border: 1px solid black; border-radius: 5px; padding: 10px; color: #f4a261">Buy
+                Now</button>
+        </div>
+    </section>
+
+    <footer
+        style="width: 100%; display: flex; justify-content: space-between; gap: 40px; background-color: orangered; margin-top: 50px; padding: 40px 30px; font-family: sans-serif; color: #ffffff; box-sizing: border-box;">
+
+        <!-- Column 1: Foody Store -->
+        <div style="width: 45%; display: flex; flex-direction: column; gap: 15px;">
+            <h1 style="margin: 0; font-size: 28px; font-weight: 700; color: #ffffff;">Foody Store</h1>
+            <p style="margin: 0; line-height: 1.6; color: rgba(255, 255, 255, 0.9); font-size: 15px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae similique accusantium ut expedita
+                maiores. Rerum illo id ducimus exercitationem possimus cum aliquam vitae repellendus ratione quos odio
+                qui, nemo laboriosam iure voluptatum.
+            </p>
+            <div class="social-links" style="display: flex; gap: 15px; margin-top: 10px;">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"
+                    style="color: #ffffff; font-size: 20px; text-decoration: none;" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- Twitter (X) -->
+                <a href="https://twitter.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"
+                    style="color: #ffffff; font-size: 20px; text-decoration: none;" title="Twitter / X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:YOUR_EMAIL@gmail.com" style="color: #ffffff; font-size: 20px; text-decoration: none;"
+                    title="Email me">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 2: Site Info -->
+        <div style="width: 25%;">
+            <h1 style="margin: 0 0 20px 0; font-size: 20px; font-weight: 600; color: #ffffff;">Site Info</h1>
+            <ul
+                style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: rgba(255, 255, 255, 0.85);">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Address Info -->
+        <div style="width: 25%;">
+            <h1 style="margin: 0 0 20px 0; font-size: 20px; font-weight: 600; color: #ffffff;">Address Info</h1>
+            <ul
+                style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: rgba(255, 255, 255, 0.85);">
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </div>
+
+    </footer>
 </body>
+
 </html>
